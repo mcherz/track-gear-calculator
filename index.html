@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+
+    <title>GearCalcWeb</title>
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />    <link rel="stylesheet" href="styles.css" />
+        
+</head>
+
+<body style="-ms-touch-action:none;">
+<div id="siteWrapper">
+
+<div id="resultsHolder">
+	<div id="gearDescription">50 x 15 is a</div>
+	<div id="measurement">90.0</div>
+	<div id="inchGear">inch gear.</div>
+	<div id='theHandHolder' class='hidden'>
+		<img id="theHand" class="hidden" src="images/theHand.png" />
+	</div>
+</div>
+
+<div id="leftCircle" class="largeCircle">
+	<div id="leftCircleLabels" class="largeRotateHolder">
+		<div id="holder44" class="ringLabelHolder">
+			<div id="label44" class="ringLabel labelOn">44</div>
+		</div>
+		<div id="holder45" class="ringLabelHolder">
+			<div id="label45" class="ringLabel labelOn">45</div>
+		</div>
+		<div id="holder46" class="ringLabelHolder">
+			<div id="label46" class="ringLabel labelOn">46</div>
+		</div>
+		<div id="holder47" class="ringLabelHolder">
+			<div id="label47" class="ringLabel labelOn">47</div>
+		</div>
+		<div id="holder48" class="ringLabelHolder">
+			<div id="label48" class="ringLabel labelOn">48</div>
+		</div>
+		<div id="holder49" class="ringLabelHolder">
+			<div id="label49" class="ringLabel labelOn">49</div>
+		</div>
+		<div id="holder50" class="ringLabelHolder">
+			<div id="label50" class="ringLabel labelOn">50</div>
+		</div>
+		<div id="holder51" class="ringLabelHolder">
+			<div id="label51" class="ringLabel labelOn">51</div>
+		</div>
+		<div id="holder52" class="ringLabelHolder">
+			<div id="label52" class="ringLabel labelOn">52</div>
+		</div>
+		<div id="holder53" class="ringLabelHolder">
+			<div id="label53" class="ringLabel labelOn">53</div>
+		</div>
+		<div id="holder54" class="ringLabelHolder">
+			<div id="label54" class="ringLabel labelOn">54</div>
+		</div>
+		<div id="holder55" class="ringLabelHolder">
+			<div id="label55" class="ringLabel labelOn">55</div>
+		</div>
+		<div id="holder56" class="ringLabelHolder">
+			<div id="label56" class="ringLabel labelOn">56</div>
+		</div>
+	</div>
+	<div id="leftMask" class="largeCircleMask"></div>
+</div>
+    <canvas id="leftCircleCanvas" width="600px" height="600px"></canvas>
+    <script>
+      var canvas = document.getElementById('leftCircleCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 299;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.closePath();
+      context.moveTo(547,282);
+      context.lineTo(585,282);
+      context.moveTo(547,320);
+      context.lineTo(585,320);
+      context.lineWidth = .5;
+      context.strokeStyle = '#ffffff';
+      context.stroke();
+      // If Samsung android browser is detected
+	  if (window.navigator && window.navigator.userAgent.indexOf('534.30') > 0) {
+
+	  // Tweak the canvas opacity, causing it to redraw
+   	  $('canvas').css('opacity', '0.99');
+
+      // Set the canvas opacity back to normal after 5ms
+      setTimeout(function() {
+    	  $('canvas').css('opacity', '1');
+      }, 5);
+
+	  }
+
+    </script>
+
+<div id="rightCircle" class="smallCircle">
+	<div id="rightCircleLabels" class="smallRotateHolder">
+		<div id="holder20" class="cogLabelHolder">
+			<div id="label20" class="cogLabel labelOn">20</div>
+		</div>
+		<div id="holder19" class="cogLabelHolder">
+			<div id="label19" class="cogLabel labelOn">19</div>
+		</div>
+		<div id="holder18" class="cogLabelHolder">
+			<div id="label18" class="cogLabel labelOn">18</div>
+		</div>
+		<div id="holder17" class="cogLabelHolder">
+			<div id="label17" class="cogLabel labelOn">17</div>
+		</div>
+		<div id="holder16" class="cogLabelHolder">
+			<div id="label16" class="cogLabel labelOn">16</div>
+		</div>
+		<div id="holder15" class="cogLabelHolder">
+			<div id="label15" class="cogLabel labelOn">15</div>
+		</div>
+		<div id="holder14" class="cogLabelHolder">
+			<div id="label14" class="cogLabel labelOn">14</div>
+		</div>
+		<div id="holder13" class="cogLabelHolder">
+			<div id="label13" class="cogLabel labelOn">13</div>
+		</div>
+		<div id="holder12" class="cogLabelHolder">
+			<div id="label12" class="cogLabel labelOn">12</div>
+		</div>
+	</div>
+	<div id="rightMask" class="smallCircleMask"></div>
+
+</div>
+    <canvas id="rightCircleCanvas" width="300px" height="300px"></canvas>
+    <script>
+      var canvas = document.getElementById('rightCircleCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 149;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.closePath();
+      context.moveTo(15,132);
+      context.lineTo(52,132);
+      context.moveTo(15,170);
+      context.lineTo(52,170);
+      context.lineWidth = .5;
+      context.strokeStyle = '#ffffff';
+      context.stroke();
+      // If Samsung android browser is detected
+	  if (window.navigator && window.navigator.userAgent.indexOf('534.30') > 0) {
+
+	  // Tweak the canvas opacity, causing it to redraw
+   	  $('canvas').css('opacity', '0.99');
+
+      // Set the canvas opacity back to normal after 5ms
+      setTimeout(function() {
+    	  $('canvas').css('opacity', '1');
+      }, 5);
+  	  }
+    </script>
+
+<div id="menu">
+	<div id="wheelSubMenu">
+		<div id="wheelHeader">
+			<img id="wheelIcon" src="images/wheelIcon.png" />
+			<div id="wheelLabel">wheel diameter</div>
+		</div>
+		<div id="wheelLine"></div>
+		<div id="diameterSelector">
+			<div id="selector0" class="selectorActive">
+				<div class="selectorText">
+					<span class="selectorSpanLeft">Nominal:</span><span class="selectorSpanRight">27 inch</span>
+				</div>
+				<div id="selector0Target" class='selectorTarget'></div>
+			</div>
+			<div id="selector1" class="selectorPassive">
+				<div class="selectorText">
+					<span class="selectorSpanLeft">Actual:</span><span class="selectorSpanRight">700c x 23 mm</span>
+				</div>
+				<div id="selector2Target" class='selectorTarget'></div>
+			</div>
+			<div id="selector2" class="selectorPassive">
+				<div class="selectorText">
+					<span class="selectorSpanLeft">Actual:</span><span class="selectorSpanRight">700c x 20 mm</span>
+				</div>
+				<div id="selector2Target" class='selectorTarget'></div>
+			</div>
+		</div>
+	</div>
+	<div id="gearsSubMenu">
+		<div id="ringHeader">
+			<img id="ringIcon" src="images/ringIcon.png" />
+			<div id="ringLabel">chainrings</div>
+		</div>
+		<div id="ringLine"></div>
+		<div id="ringSwitches">
+			<div class="switchAndLabel">
+				<div class="switchLabel">44</div>
+				<input id="switch44" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch44"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">45</div>
+				<input id="switch45" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch45"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">46</div>
+				<input id="switch46" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch46"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">47</div>
+				<input id="switch47" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch47"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">48</div>
+				<input id="switch48" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch48"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">49</div>
+				<input id="switch49" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch49"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">50</div>
+				<input id="switch50" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch50"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">51</div>
+				<input id="switch51" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch51"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">52</div>
+				<input id="switch52" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch52"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">53</div>
+				<input id="switch53" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch53"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">54</div>
+				<input id="switch54" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch54"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">55</div>
+				<input id="switch55" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch55"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">56</div>
+				<input id="switch56" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch56"></label>
+			</div>
+		</div>
+		<div id="cogSwitches">
+			<div class="switchAndLabel">
+				<div class="switchLabel">20</div>
+				<input id="switch20" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch20"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">19</div>
+				<input id="switch19" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch19"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">18</div>
+				<input id="switch18" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch18"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">17</div>
+				<input id="switch17" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch17"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">16</div>
+				<input id="switch16" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch16"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">15</div>
+				<input id="switch15" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch15"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">14</div>
+				<input id="switch14" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch14"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">13</div>
+				<input id="switch13" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch13"></label>
+			</div>
+			<div class="switchAndLabel">
+				<div class="switchLabel">12</div>
+				<input id="switch12" class="regular-checkbox big-checkbox" type="checkbox" /><label for="switch12"></label>
+			</div>
+		</div>
+		<div id="cogHeader">
+			<img id="cogIcon" src="images/cogIcon.png" />
+			<div id="cogLabel">cogs</div>
+		</div>
+		<div id="cogLine"></div>
+	</div>
+</div>
+
+
+<div id="menuButton">
+	<div id="menuButtonWrenches"></div>
+	<div id="menuButtonClose"></div>
+</div>
+
+</div>
+</body>
+</html>

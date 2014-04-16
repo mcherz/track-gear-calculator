@@ -1,0 +1,763 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+html, div, body, p, span {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: "font_prolight";
+}
+
+html, body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	overflow: hidden;
+}
+
+body {
+	background-color: #555555;
+}
+
+label {
+	display: inline;
+}
+
+#siteWrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+#leftCircleCanvas {
+	position: absolute;
+	top: -130px;
+	right: 60%;
+
+}
+#rightCircleCanvas {
+	position: absolute;
+	top: 20px;
+	right: -180px;
+
+}
+
+#resultsHolder {
+	z-index: 5;
+	position: absolute;
+	left: 30%;
+	top: 64%;
+	width: 60%;
+	height: 150px;
+}
+
+#gearDescription {
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+	color: #aaaaaa;
+}
+
+#measurement {
+	position: absolute;
+	left: 0px;
+	top: 23px;
+	width: 100%;
+	height: 90px;
+	font-family: "font_proextralight";
+	text-align: center;
+	font-size: 90px;
+	color: #ffffff;
+
+}
+
+#inchGear {
+	position: absolute;
+	left: 0px;
+	top: 120px;
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+	color: #aaaaaa;
+
+}
+
+#theHandHolder {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 50px;
+	height: 20px;
+}
+
+#theHand {
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	top: 80px;
+	left: -50px;
+	width: 125px;
+	height: 180px;
+	z-index: 12;
+}
+
+#holder44 {
+	transform:rotate(-60deg);
+	-webkit-transform:rotate(-60deg);
+	-ms-transform:rotate(-60deg);
+}
+
+#holder45 {
+	transform:rotate(-50deg);
+	-webkit-transform:rotate(-50deg);
+	-ms-transform:rotate(-50deg);
+}
+
+#holder46 {
+	transform:rotate(-40deg);
+	-webkit-transform:rotate(-40deg);
+	-ms-transform:rotate(-40deg);
+
+}
+
+#holder47 {
+	transform:rotate(-30deg);
+	-webkit-transform:rotate(-30deg);
+	-ms-transform:rotate(-30deg);
+}
+
+#holder48 {
+	transform:rotate(-20deg);
+	-webkit-transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg);
+}
+
+#holder49 {
+	transform:rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
+	-ms-transform:rotate(-10deg);
+}
+
+#holder50 {
+	transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+}
+
+#holder51 {
+	transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+	-ms-transform:rotate(10deg);
+}
+
+#holder52 {
+	transform:rotate(20deg);
+	-webkit-transform:rotate(20deg);
+	-ms-transform:rotate(20deg);
+}
+
+#holder53 {
+	transform:rotate(30deg);
+	-webkit-transform:rotate(30deg);
+	-ms-transform:rotate(30deg);
+}
+
+#holder54 {
+	transform:rotate(40deg);
+	-webkit-transform:rotate(40deg);
+}
+
+#holder55 {
+	transform:rotate(50deg);
+	-webkit-transform:rotate(50deg);
+	-ms-transform:rotate(50deg);
+}
+
+#holder56 {
+	transform:rotate(60deg);
+	-webkit-transform:rotate(60deg);
+	-ms-transform:rotate(60deg);
+}
+
+
+
+#holder20 {
+	transform:rotate(110deg);
+	-webkit-transform:rotate(110deg);
+	-ms-transform:rotate(110deg);
+}
+
+#holder19 {
+	transform:rotate(88deg);
+	-webkit-transform:rotate(88deg);
+	-ms-transform:rotate(88deg);
+}
+
+#holder18 {
+	transform:rotate(66deg);
+	-webkit-transform:rotate(66deg);
+	-ms-transform:rotate(66deg);
+}
+
+#holder17 {
+	transform:rotate(44deg);
+	-webkit-transform:rotate(44deg);
+	-ms-transform:rotate(44deg);
+}
+
+#holder16 {
+	transform:rotate(22deg);
+	-webkit-transform:rotate(22deg);
+	-ms-transform:rotate(22deg);
+}
+
+#holder15 {
+	transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+}
+
+#holder14 {
+	transform:rotate(-22deg);
+	-webkit-transform:rotate(-22deg);
+	-ms-transform:rotate(-22deg);
+}
+
+#holder13 {
+	transform:rotate(-44deg);
+	-webkit-transform:rotate(-44deg);
+	-ms-transform:rotate(-44deg);
+}
+
+#holder12 {
+	transform:rotate(-66deg);
+	-webkit-transform:rotate(-66deg);
+	-ms-transform:rotate(-66deg);
+}
+
+#menuButton {
+	position: absolute;
+	z-index: 1000;
+	left: 0px;
+	bottom: 0px;
+	width: 50px;
+	height: 50px;
+}
+
+#menuButtonWrenches {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 40px;
+	height:	40px;
+	background-image: url("images/wrenches.png");
+	background-size: 100%;
+	opacity: 1;
+}
+
+#menuButtonClose {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	background-image: url("images/closeX.png");
+	background-size: 100%;
+	opacity: 0;
+}
+
+#menu {
+	position: absolute;
+	z-index: 10;
+	top: 100%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #222222;
+	background-color:rgba(32,32,32,0.9);
+
+}
+
+#wheelSubMenu {
+	position: absolute;
+	left: 5%;
+	top: 0px;
+	width: 90%;
+	height: 100%;
+}
+
+#wheelHeader {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#wheelIcon {
+	position: absolute;
+	left: 5px;
+	top: 50px;
+	width: 30px;
+	height: 30px;
+}
+
+#wheelLabel {
+	position: absolute;
+	left: 43px;
+	top: 60px;
+	width: 150px;
+	height: 24px;
+	font-family: "font_proextralight";
+	font-size: 18px;
+	color: #aaaaaa;
+}
+
+#wheelLine {
+	position: absolute;
+	top: 90px;
+	width: 100%;
+	height: 1px;
+	background-color: #aaaaaa;
+}
+
+#diameterSelector {
+	position: absolute;
+	left: 5%;
+	top: 102px;
+	width: 90%;
+	height: 50px;
+	border: 2px solid #aaaaaa;
+}
+
+#selector0 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 33%;
+	height: 100%;
+	border-right: 2px solid #aaaaaa;
+	font-family: "font_prolight";
+	font-size: 12px;
+	text-align: center;
+}
+
+#selector1 {
+	position: absolute;
+	left: 33%;
+	top: 0px;
+	width: 34%;
+	height: 100%;
+	border-right: 2px solid #aaaaaa;
+	font-family: "font_prolight";
+	font-size: 12px;
+	text-align: center;
+}
+
+#selector2 {
+	position: absolute;
+	left: 67%;
+	top: 0px;
+	width: 33%;
+	height: 100%;
+	border-right: 2px solid #aaaaaa;
+	font-family: "font_prolight";
+	font-size: 12px;
+	text-align: center;
+}
+
+#gearsSubMenu {
+	position: absolute;
+	left: 5%;
+	top: 140px;
+	width: 90%;
+	height: 100%;
+}
+
+#ringHeader {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#ringIcon {
+	position: absolute;
+	left: 5px;
+	top: 50px;
+	width: 30px;
+	height: 30px;
+}
+
+#ringLabel {
+	position: absolute;
+	left: 43px;
+	top: 60px;
+	width: 150px;
+	height: 24px;
+	font-family: "font_proextralight";
+	font-size: 18px;
+	color: #aaaaaa;
+}
+
+#ringLine {
+	position: absolute;
+	top: 90px;
+	width: 47%;
+	height: 1px;
+	background-color: #aaaaaa;
+}
+
+#ringSwitchLabels {
+	position: absolute;
+	top: 108px;
+	left: 0px;
+}
+
+#ringSwitches {
+	position: absolute;
+	top: 90px;
+	left: 0%;
+	width: 40%;
+}
+
+#cogHeader {
+	position: absolute;
+	top: 0px;
+	left: 53%;
+}
+
+#cogIcon {
+	position: absolute;
+	left: 5px;
+	top: 65px;
+	width: 15px;
+	height: 15px;
+}
+
+#cogLabel {
+	position: absolute;
+	left: 27px;
+	top: 60px;
+	width: 150px;
+	height: 24px;
+	font-family: "font_proextralight";
+	font-size: 18px;
+	color: #aaaaaa;
+}
+
+#cogLine {
+	position: absolute;
+	left: 53%;
+	top: 90px;
+	width: 47%;
+	height: 1px;
+	background-color: #aaaaaa;
+}
+
+#cogSwitchLabels {
+	position: absolute;
+	top: 108px;
+	left: 53%;
+}
+
+#cogSwitches {
+	position: absolute;
+	top: 90px;
+	left: 53%;
+	width: 40%;
+}
+
+.hidden {
+	display: none;
+}
+
+.selectorText {
+	display:table-cell;
+	vertical-align:middle
+}
+
+.selectorActive {
+	display: table;
+	background-color: #aaaaaa;
+	color: #222222;
+}
+
+.selectorPassive {
+	display: table;
+	color: #aaaaaa;
+}
+
+.selectorTarget {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.selectorSpanLeft {
+	display: inline-block;
+	margin-left: 6px;
+	margin-right: 3px;
+}
+
+.selectorSpanRight {
+	display: inline-block;
+	margin-left: 3px;
+	margin-right: 6px;
+}
+
+.largeCircle {
+	position: absolute;
+	top: -130px;
+	right: 60%;
+	width: 600px;
+	height: 600px;
+}
+
+.largeRotateHolder {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 600px;
+	height: 600px;
+}
+
+.largeCircleMask {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 600px;
+	height: 600px;
+	background-image: url("images/leftMask.png");
+	background-size: 100%;
+}
+
+.smallCircle {
+	position: absolute;
+	top: 20px;
+	right: -180px;
+	width: 300px;
+	height: 300px;
+}
+
+.smallRotateHolder {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 300px;
+}
+
+.smallCircleMask {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 300px;
+	background-image: url("images/rightMask.png");
+	background-size: 100%;
+}
+
+.ringLabelHolder {
+	position: absolute;
+	left: 10px;
+	top: 288px;
+	width: 580px;
+	height: 24px;
+
+}
+
+.cogLabelHolder {
+	position: absolute;
+	left: 10px;
+	top: 138px;
+	width: 280px;
+	height: 24px;
+
+}
+
+.ringLabel {
+	position: absolute;
+	left: 542px;
+	top: -5px;
+	width: 28px;
+	height: 24px;
+	text-align: center;
+}
+
+.labelOn {
+	font-family: 'font_prolight';
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: lighter;
+	margin-top: 0px;
+}
+
+.labelOff {
+	font-family: 'font_proextralight';
+	color: #aaaaaa;
+	font-size: 22px;
+	font-weight: lighter;
+	margin-top: 4px;
+}
+
+.cogLabel {
+	position: absolute;
+	left: 8px;
+	top: -5px;
+	width: 28px;
+	height: 24px;
+	text-align: center;
+}
+
+.switch {
+	display: block;
+	margin-top: 20px;
+	height: 25px;
+	width: 25px;
+}
+
+.regular-checkbox {
+	display: none;
+}
+
+.regular-checkbox + label {
+	top: 5px;
+	left: 25%;
+	margin-top: 15px;
+	background-color: #222222;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	background-color: #333333;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #5966e6;
+}
+
+
+.big-checkbox + label {
+	padding: 14px;
+}
+
+.big-checkbox:checked + label:after {
+	font-size: 18px;
+	left: 6px;
+	top: 2px;
+}
+
+.switchAndLabel {
+	height: 45px;
+	width: 100%;
+}
+
+.switchLabel {
+	display: inline-block;
+	margin-left: 5px;
+	height: 45px;
+	font-family: 'font_prolight';
+	font-size: 24px;
+	color: #dddddd;
+}
+
+@font-face {
+    font-family: 'font_proextralight';
+    src: url('fonts/font-extralight-webfont.eot');
+    src: url('fonts/font-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/font-extralight-webfont.woff') format('woff'),
+         url('fonts/font-extralight-webfont.ttf') format('truetype'),
+         url('fonts/font-extralight-webfont.svg#font_proextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'font_prolight';
+    src: url('fonts/font-light-webfont.eot');
+    src: url('fonts/font-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/font-light-webfont.woff') format('woff'),
+         url('fonts/font-light-webfont.ttf') format('truetype'),
+         url('fonts/font-light-webfont.svg#font_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media (orientation: landscape) {
+	#leftCircleCanvas, .largeCircle {
+		position: absolute;
+		top: 50%;
+		margin-top: -300px;
+		left: -480px;
+
+	}
+
+	.largeCircleMask {
+		background-image: url("images/leftMaskLandscape.png");
+		background-size: 100%;
+	}
+
+	#menuButton {
+		left: 110px;
+	}
+
+	#rightCircleCanvas, .smallCircle {
+		position: absolute;
+		top: 50%;
+		margin-top: -150px;
+		right: -180px;
+
+	}
+
+	#resultsHolder {
+		z-index: 5;
+		position: absolute;
+		left: 25%;
+		top: 50%;
+		margin-top: -75px;
+		width: 50%;
+		height: 150px;
+	}
+
+
+}
